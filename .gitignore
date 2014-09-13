@@ -57,3 +57,4 @@ target/
 .project
 .pydevproject
 servers_openomf/settings.py
+db.sqlite3
