@@ -25,11 +25,6 @@
             }
         }
         $(function() {
-            $(window).on('resize', function(){
-                resize_content();
-            });
-            resize_content();
-            
 {% block jquery %}{% endblock %}
         });
     </script>
@@ -41,16 +36,16 @@
             <div id="base_header_alpha">
                 <div id="base_header">
                     <div id="login_info">
-                        <span id="user_name"><span id="user_name_desc">Logged in as:</span><br /><a href="">Username</a></span>
+                        <span id="user_name"><span id="user_name_desc">Logged in as:</span><br /><a href="{% url 'mainsite:profile' %}">Username</a></span>
                         <img id="user_avatar" src="https://www.gravatar.com/avatar/b6d9dceaad6db69d6d970501fc4f9990?d=retro" width="48" height="48" />
                     </div>
                     <h1>OpenOMF Servers</h1>
                 </div>
                 <ul id="base_nav">
-                    <li><a href="{% url 'index' %}">About</a></li>
-                    <li><a href="">Server list</a></li>
-                    <li><a href="">Search</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="{% url 'mainsite:index' %}">About</a></li>
+                    <li><a href="{% url 'mainsite:servers' %}">Server list</a></li>
+                    <li><a href="{% url 'mainsite:search' %}">Search</a></li>
+                    <li><a href="{% url 'mainsite:login' %}">Login</a></li>
                 </ul>
             </div>
         </div>
