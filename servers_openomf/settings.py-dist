@@ -1,8 +1,12 @@
+# Installation
+# Set SECRET_KEY
+# Set database stuff
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-SECRET_KEY = '+e*o$y%zpbgc_7p0h1r-!^+9jvj0(46t-rgdrc)oj-c!_5*r3n'
+SECRET_KEY = ''
 
 DEBUG = True
 TEMPLATE_DEBUG = True
