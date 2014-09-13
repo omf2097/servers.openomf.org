@@ -1,0 +1,193 @@
+body {
+    background-color: #666;
+}
+body,html {
+    height: 100%;
+    margin: 0;
+}
+
+h2,h3,h4,h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 280%;
+    color: #eee;
+    font-variant: small-caps;
+    text-shadow: 0px 0px 3px #eee;
+    font-family: 'Audiowide', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 160%;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    color: #eee;
+}
+
+h3 {
+    font-size: 120%;
+    margin-top: 0.6em;
+    margin-bottom: 0.5em;
+    color: #eee;
+}
+
+p,span,strong,li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 85%;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+    text-align: justify;
+    color: #eee;
+}
+
+#base {
+    margin-top: 0;
+}
+
+#base_inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #323232;
+    margin-top: 0;
+}
+
+#base_header_outer {
+    background-color: #212121;
+}
+
+#base_header_image {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('header.png');
+}
+
+#base_header_alpha {
+    background: -moz-linear-gradient(left,  rgba(33,33,33,1) 0%, rgba(33,33,33,0.7) 10%, rgba(33,33,33,0.7) 90%, rgba(33,33,33,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(33,33,33,1)), color-stop(10%,rgba(33,33,33,0.7)), color-stop(90%,rgba(33,33,33,0.7)), color-stop(100%,rgba(33,33,33,1)));
+    background: -webkit-linear-gradient(left,  rgba(33,33,33,1) 0%,rgba(33,33,33,0.7) 10%,rgba(33,33,33,0.7) 90%,rgba(33,33,33,1) 100%);
+    background: -o-linear-gradient(left,  rgba(33,33,33,1) 0%,rgba(33,33,33,0.7) 10%,rgba(33,33,33,0.7) 90%,rgba(33,33,33,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(33,33,33,1) 0%,rgba(33,33,33,0.7) 10%,rgba(33,33,33,0.7) 90%,rgba(33,33,33,1) 100%);
+    background: linear-gradient(to right,  rgba(33,33,33,1) 0%,rgba(33,33,33,0.7) 10%,rgba(33,33,33,0.7) 90%,rgba(33,33,33,1) 100%);
+}
+
+#base_header {
+    padding: 0px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#base_nav {
+    height: 32px;
+    background: #303030;
+    background: -moz-linear-gradient(top, #303030 0%, #282828 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303030), color-stop(100%,#282828));
+    background: -webkit-linear-gradient(top, #303030 0%,#282828 100%);
+    background: -o-linear-gradient(top, #303030 0%,#282828 100%);
+    background: -ms-linear-gradient(top, #303030 0%,#282828 100%);
+    background: linear-gradient(to bottom, #303030 0%,#282828 100%);
+    
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#base_nav li {
+    float: left;
+    display: block;
+    height: 32px;
+}
+
+#base_nav li a {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #eee;
+    text-decoration: none;
+    display: block;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+#base_nav li:hover {
+    background-color: #3a3a3a;
+    text-decoration: underline;
+}
+
+#base_content {
+    padding: 10px;
+}
+
+#login_info {
+    position: relative;
+    float: right;
+    background-color: #282828;
+    padding: 6px;
+}
+
+#user_name_desc {
+    font-size: 75%;
+    line-height: 1.5;
+}
+
+#user_name {
+    color: #eee;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+}
+
+#user_name a {
+    color: #eee;
+    text-decoration: none;
+}
+
+#user_name a:hover {
+    text-decoration: underline;
+}
+
+#user_avatar {
+    box-shadow: 0px 0px 3px #aaa;
+    display: inline-block;
+    float: right;
+}
+
+@media (max-width: 1200px) {
+    #base_header_image {
+        width: 1000px;
+        background-position: -100px 0px; 
+    }
+}
+
+@media (max-width: 1000px) {
+    #base_header_image {
+        width: 100%;
+        background-position: -100px 0px; 
+    }
+    #base_nav {
+        width: 100%;
+    }
+    #base_inner {
+        width: 100%;
+    }
+    #base_header {
+        width: 100%;
+    }
+}

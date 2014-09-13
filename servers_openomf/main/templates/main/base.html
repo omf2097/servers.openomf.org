@@ -1,0 +1,65 @@
+<!DOCTYPE html>{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}OpenOMF Servers{% endblock %}</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="description" content="OpenOMF Servers" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="http://servers.openomf.org" />
+    <meta property="og:title" content="OpenOMF Servers" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OpenOMF Servers" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'main/reset.css' %}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Audiowide|Open+Sans:400,700" />
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}" />
+    <script type="text/javascript">
+        function resize_content() {
+            var windowHeight = $(window).height();
+            var headerHeight = $('#base_header_outer').height();
+            var bodyHeight = $('#base_inner').height();
+            var newBodyHeight = windowHeight - headerHeight;
+            if(newBodyHeight > 0 && newBodyHeight > bodyHeight) {
+                $('#base_inner').height(newBodyHeight);
+            }
+        }
+        $(function() {
+            $(window).on('resize', function(){
+                resize_content();
+            });
+            resize_content();
+            
+{% block jquery %}{% endblock %}
+        });
+    </script>
+</head>
+<body>
+<div id="base">
+    <div id="base_header_outer">
+        <div id="base_header_image">
+            <div id="base_header_alpha">
+                <div id="base_header">
+                    <div id="login_info">
+                        <span id="user_name"><span id="user_name_desc">Logged in as:</span><br /><a href="">Username</a></span>
+                        <img id="user_avatar" src="https://www.gravatar.com/avatar/b6d9dceaad6db69d6d970501fc4f9990?d=retro" width="48" height="48" />
+                    </div>
+                    <h1>OpenOMF Servers</h1>
+                </div>
+                <ul id="base_nav">
+                    <li><a href="{% url 'index' %}">About</a></li>
+                    <li><a href="">Server list</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="base_inner">
+        <div id="base_content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
