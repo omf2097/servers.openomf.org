@@ -76,7 +76,7 @@ p {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('header.png');
+    background-image: url('header.jpg');
 }
 
 #base_header_alpha {
@@ -154,7 +154,9 @@ p {
     color: #eee;
     vertical-align: middle;
     display: inline-block;
-    padding: 10px;
+    padding-right: 10px;
+    padding-left: 6px;
+    padding-top: 3px;
 }
 
 #user_name a {
